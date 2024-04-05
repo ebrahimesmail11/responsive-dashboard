@@ -1,12 +1,11 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:responsive_dash_board/models/drawer_items_models.dart';
-import 'package:responsive_dash_board/utils/app_images.dart';
 import 'package:responsive_dash_board/widgets/active_and_inactive_widget.dart';
 import 'package:responsive_dash_board/widgets/drawer_item_list_view.dart';
 
+
+
+import '../utils/app_images.dart';
 import 'user_info_list_tile.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -34,7 +33,7 @@ class CustomDrawer extends StatelessWidget {
             hasScrollBody: false,
             child: Column(
               children: [
-                Expanded(child: SizedBox(),),
+                Expanded(child: SizedBox(height: 20,),),
                 InActiveDrawerItem(
                   drawerItemModels: DrawerItemModels(
                       image: Assets.imagesSettings, title: "Setting system"),

@@ -1,4 +1,6 @@
-import 'package:responsive_dash_board/utils/app_images.dart';
+
+
+import '../utils/app_images.dart';
 
 class DrawerItemModels{
   final String image;
