@@ -42,16 +42,6 @@ static const items=[
       }
     }).toList(),
     );
-    // return SizedBox(
-    //   height: 500,
-    //   child: ListView.builder(
-    //     itemCount: items.length,
-    //     scrollDirection: Axis.horizontal,
-    //     physics: const NeverScrollableScrollPhysics(),
-    //     itemBuilder: (context, index) {
-    //       return AllExpensesItem(itemModel: items[index].itemModel,);
-    //     },
-    //   ),
-    // );
+    
   }
 }
