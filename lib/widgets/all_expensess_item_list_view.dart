@@ -10,19 +10,19 @@ static const items=[
       AllExpensesItemModel(
                   image: Assets.imagesBalance,
                   title: "Balance",
-                  data: "April 202",
+                  data: "April 2022",
                   price: "\$20,129"),
                     
                AllExpensesItemModel(
                   image: Assets.imagesIncome,
                   title: "Income",
-                  data: "April 202",
+                  data: "April 2022",
                   price: "\$20,129"),
                   
                AllExpensesItemModel(
                   image: Assets.imagesExpenses,
                   title: "Expensesss",
-                  data: "April 202",
+                  data: "April 2022",
                   price: "\$20,129"),
 ];
   @override
