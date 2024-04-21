@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/widgets/custom_background_container.dart';
 import 'package:responsive_dash_board/widgets/latest_transaction.dart';
+import 'package:responsive_dash_board/widgets/quich_invoice_form.dart';
 import 'package:responsive_dash_board/widgets/quich_invoice_header.dart';
-import 'package:responsive_dash_board/widgets/title_text_field.dart';
 
 class QuickInvoice extends StatelessWidget {
   const QuickInvoice({super.key});
@@ -14,8 +14,8 @@ class QuickInvoice extends StatelessWidget {
         children: [
           QuickInvoiceHeader(),
           LatestTransaction(),
-          Divider(height: 48,),
-          TitleTextField(title: "Customer name",hint: "Type customer name",),
+          Divider(height: 48,color: Color(0xffF1F1F1),),
+          QuichInvoiceForm(),
         ],
       ),
     );
