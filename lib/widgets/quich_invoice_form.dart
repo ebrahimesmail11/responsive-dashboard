@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:responsive_dash_board/widgets/custom_button.dart';
 import 'package:responsive_dash_board/widgets/title_text_field.dart';
 
 class QuichInvoiceForm extends StatelessWidget {
@@ -23,6 +24,14 @@ class QuichInvoiceForm extends StatelessWidget {
             Expanded(child: TitleTextField(title: "Item name", hint: "Type customer name",),),
             SizedBox(width: 16,),
             Expanded(child: TitleTextField(title: "Item mount", hint: "USD",),),
+          ],
+        ),
+        SizedBox(height: 24,),
+        Row(
+          children: [
+            Expanded(child: CustomButton(backgroundColor: Colors.transparent,textColor: Color(0xFF4EB7F2),text: 'Add more details',),),
+            SizedBox(width: 24,),
+            Expanded(child: CustomButton(),),
           ],
         ),
       ],
