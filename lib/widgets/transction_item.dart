@@ -13,8 +13,8 @@ final TransctionModel transctionModel;
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child:  ListTile(
         title:  Text(transctionModel.title,style: AppStyles.styleSemiBold16(context),),
-        subtitle:  Text(transctionModel.data,style: AppStyles.styleRegular16(context),),
-        trailing:  Text(transctionModel.amount,style: AppStyles.styleSemiBold20(context).copyWith(color: transctionModel.isWithdrawal?const  Color(0xFFF3735E):const Color(0xFF7CD7F2)),),
+        subtitle:  Text(transctionModel.data,style: AppStyles.styleRegular16(context).copyWith(color: const  Color(0xFFAAAAAB)),),
+        trailing:  Text(transctionModel.amount,style: AppStyles.styleSemiBold20(context).copyWith(color: transctionModel.isWithdrawal?const  Color(0xFFF3735E):const Color(0xFF7CD87C)),),
       ),
     );
   }
