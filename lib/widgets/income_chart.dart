@@ -17,12 +17,9 @@ class _IncomeChartState extends State<IncomeChart> {
 
     return AspectRatio(
       aspectRatio: 1,
-      child:  Container(
-        color: Colors.white,
-        child: PieChart(
-            getChartData(),
-          ),
-      ),
+      child:  PieChart(
+          getChartData(),
+        ),
     
     );
   }
