@@ -35,7 +35,7 @@ class MyCard extends StatelessWidget {
               subtitle: Text('Syah Bandi',style: AppStyles.styleMedium20(context),),
               trailing: SvgPicture.asset(Assets.imagesGallery),
             ),
-            Expanded(child: SizedBox(),),
+           const  Expanded(child: SizedBox(),),
            Padding(
              padding: const EdgeInsets.only(right: 24,),
              child: Column(
