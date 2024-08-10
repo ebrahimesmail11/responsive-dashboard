@@ -12,12 +12,15 @@ static const  itemDetails = [
 ];
   @override
   Widget build(BuildContext context) {
-    return  ListView.builder(
-      itemCount: itemDetails.length,
-      shrinkWrap: true,
-      itemBuilder: (context,index){
-        return ItemDetails( itemDetailsModel: itemDetails[index],);
-      },
+    return Column(
+      children: itemDetails.map((e) => ItemDetails(itemDetailsModel: e,)).toList(),
     );
+    // return  ListView.builder(
+    //   itemCount: itemDetails.length,
+    //   shrinkWrap: true,
+    //   itemBuilder: (context,index){
+    //     return ItemDetails( itemDetailsModel: itemDetails[index],);
+    //   },
+    // );
   }
 }
