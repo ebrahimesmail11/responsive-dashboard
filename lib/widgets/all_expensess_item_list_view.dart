@@ -39,26 +39,17 @@ int isSelected=0;
     children: items.asMap().entries.map((e) {
       int index=e.key;
       var item=e.value;
-      if(index==1){
-        return Expanded(
+      return Expanded(
           child: GestureDetector(
             onTap: (){
               updateIndex(index);
             },
             child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12.0),
+            padding:  EdgeInsets.symmetric(horizontal:index== 1? 12.0:0),
             child: AllExpensesItem(itemModel: item, isSelected: isSelected==index,),
           ),
           ),
         );
-      }else{
-        return Expanded(
-          child: GestureDetector(
-            onTap: () => updateIndex(index),
-            child: AllExpensesItem(itemModel: item, isSelected: isSelected==index,),
-          ),
-        );
-      }
     }).toList(),
     );
     

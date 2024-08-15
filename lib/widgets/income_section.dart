@@ -18,7 +18,6 @@ class IncomeSection extends StatelessWidget {
            IncomeSectionHeader(),
            SizedBox(height: 16,),
            IncomeSectionBody(),
-           
         ],
       ),
     );
